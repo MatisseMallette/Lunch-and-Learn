@@ -6,8 +6,6 @@ class ErrorSerializer
     }
   end
 
-  private
-
   def self.find_status
     {
       ActiveRecord::RecordNotFound => 404,

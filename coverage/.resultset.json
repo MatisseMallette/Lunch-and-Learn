@@ -1,41 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          null,
-          2,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/user.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
           null,
           1,
-          2,
+          10,
           null,
           null
         ]
@@ -46,39 +20,8 @@
           1,
           null
         ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/serializers/error_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1678137958
+    "timestamp": 1678138503
   }
 }
