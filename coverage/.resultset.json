@@ -1,114 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/api/v1/learning_resources_controller.rb": {
+      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/user.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          null,
           null,
           1,
-          null,
-          1,
-          1,
+          8,
           null,
           null
         ]
       },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/application_controller.rb": {
+      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/application_record.rb": {
         "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/learning_resource_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          10,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/video_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/image_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/poros/learning_resource.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/matissemallette/Desktop/turing_work/3mod/projects/lunch-and-learn/app/serializers/learning_resource_serializer.rb": {
-        "lines": [
-          1,
           1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1678133589
+    "timestamp": 1678135955
   }
 }
