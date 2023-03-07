@@ -5,8 +5,6 @@ class AirQualityFacade
     AirQuality.new(data, readable_aqi[aqi])
   end
 
-  private
-
   def self.readable_aqi
     {
       1 => 'Good',
