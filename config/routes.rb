@@ -5,6 +5,8 @@ Rails.application.routes.draw do
       resources :recipes, only: :index
       resources :learning_resources, only: :index
       resources :users, only: :create
+
+      get 'air_quality', to: 'air_quality#show'
     end
   end
 end

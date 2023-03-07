@@ -7,7 +7,7 @@ class CountryFacade
   end
 
   def self.find_country(name)
-    data = CountryService.find_country(name).first
+    data = CountryService.country(name).first
     Country.new(data)
   end
 end
