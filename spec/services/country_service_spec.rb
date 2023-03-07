@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Country Service' do
-  describe 'successful response' do
+  describe 'successful response', :vcr do
     it 'it returns data about a country' do
       data = CountryService.country('Mexico').first
 

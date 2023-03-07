@@ -11,7 +11,7 @@ RSpec.describe 'AirQuality' do
       expect(air_quality.id).to eq(nil)
       expect(air_quality.aqi).to eq(4)
       expect(air_quality.aqi).to be_an(Integer)
-      expect(air_quality.datetime).to eq(1678223454)
+      expect(air_quality.datetime).to eq(1678224114)
       expect(air_quality.datetime).to be_an(Integer)
       expect(air_quality.readable_aqi).to eq('Poor')
       expect(air_quality.readable_aqi).to be_a(String)

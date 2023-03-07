@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 07 Mar 2023 22:20:31 GMT
+      - Tue, 07 Mar 2023 22:33:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -38,6 +38,6 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":-99.13,"lat":19.43},"list":[{"main":{"aqi":4},"components":{"co":287.06,"no":0.31,"no2":2.96,"o3":164.51,"so2":21.22,"pm2_5":19.97,"pm10":21.81,"nh3":0},"dt":1678227511}]}'
-  recorded_at: Tue, 07 Mar 2023 22:20:31 GMT
+      string: '{"coord":{"lon":-99.13,"lat":19.43},"list":[{"main":{"aqi":4},"components":{"co":287.06,"no":0.31,"no2":2.96,"o3":164.51,"so2":21.22,"pm2_5":19.97,"pm10":21.81,"nh3":0},"dt":1678227867}]}'
+  recorded_at: Tue, 07 Mar 2023 22:33:32 GMT
 recorded_with: VCR 6.1.0
