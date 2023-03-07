@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=OPENWEATHERMAP_API_KEY&lat=19.43&lon=-99.13
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 07 Mar 2023 22:20:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '187'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=19.43&lon=-99.13"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-99.13,"lat":19.43},"list":[{"main":{"aqi":4},"components":{"co":287.06,"no":0.31,"no2":2.96,"o3":164.51,"so2":21.22,"pm2_5":19.97,"pm10":21.81,"nh3":0},"dt":1678227511}]}'
+  recorded_at: Tue, 07 Mar 2023 22:20:31 GMT
+recorded_with: VCR 6.1.0
