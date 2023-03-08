@@ -1,8 +1,9 @@
 class ErrorSerializer
   def self.serialize(error)
     {
-      message: error.full_messages,
-      status: find_status[error.class].to_s
+      "message": 'There was an error processing your request',
+      "errors": error.full_messages,
+      "status": find_status[error.class].to_s
     }
   end
 
