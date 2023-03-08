@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_06_204040) do
+ActiveRecord::Schema.define(version: 2023_03_08_050640) do
+
+  create_table "api_v1_favorites", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "country"
+    t.string "recipe_link"
+    t.string "recipe_title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"

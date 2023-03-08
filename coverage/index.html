@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-03-07T15:58:52-07:00">2023-03-07T15:58:52-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-03-07T22:14:50-07:00">2023-03-07T22:14:50-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.78
+         3.58
        </span>
     </span> hits/line
     )
@@ -39,12 +39,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>25</b> files in total.
+    <b>26</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>159</b> relevant lines,
-    <span class="green"><b>159</b> lines covered</span> and
+    <b>162</b> relevant lines,
+    <span class="green"><b>162</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -165,7 +165,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.60</td>
+            <td class="cell--number">4.80</td>
             
           </tr>
         
@@ -175,6 +175,17 @@
             <td class="cell--number">3</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#b44a2c87391227243f81f9d87623b658b06152d7" class="src_link" title="app/models/favorite.rb">app/models/favorite.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -231,7 +242,7 @@
             <td class="cell--number">8</td>
             <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">12.88</td>
+            <td class="cell--number">10.38</td>
             
           </tr>
         
@@ -917,7 +928,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -1038,7 +1049,7 @@
 
             
 
-            <code class="ruby">    params.permit(:name, :email)</code>
+            <code class="ruby">    params.permit(:type, :id, :name, :email)</code>
           </li>
         </div>
       
@@ -1847,8 +1858,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="5">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="5">
+            <span class="hits">16</span>
             
 
             
@@ -1945,6 +1956,92 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b44a2c87391227243f81f9d87623b658b06152d7">
+  <div class="header">
+    <h3>app/models/favorite.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Favorite &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates_presence_of :country, :recipe_link, :recipe_title</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -2539,8 +2636,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="4">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="4">
+            <span class="hits">16</span>
             
 
             
@@ -2550,8 +2647,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="5">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="5">
+            <span class="hits">16</span>
             
 
             
@@ -2561,8 +2658,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="6">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="6">
+            <span class="hits">16</span>
             
 
             
@@ -2572,8 +2669,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="7">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="7">
+            <span class="hits">16</span>
             
 
             
@@ -2583,8 +2680,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="8">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="16" data-linenumber="8">
+            <span class="hits">16</span>
             
 
             
