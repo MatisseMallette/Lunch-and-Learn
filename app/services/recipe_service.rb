@@ -10,7 +10,6 @@ class RecipeService
     response = conn.get do |f|
       f.params['q'] = country
     end
-    
     JSON.parse(response.body, symbolize_names: true)
   end
 end

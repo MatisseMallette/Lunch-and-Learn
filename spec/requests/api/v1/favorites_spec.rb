@@ -20,8 +20,6 @@ RSpec.describe 'Api::V1::Favorites', type: :request do
                               recipe_title: 'Test Favorite 3',
                               recipe_link: 'https://www.testurl3.com'
                             })
-
-    binding.pry
   end
 
   describe 'post favorite' do
@@ -49,7 +47,6 @@ RSpec.describe 'Api::V1::Favorites', type: :request do
 
       expect(response.status).to eq(200)
       parsed_response = JSON.parse(response.body, symbolize_names: true)
-      binding.pry
 
       parsed_response[:data].each do |favorite|
         db_favorite = Favorite.find(favorite[:id])

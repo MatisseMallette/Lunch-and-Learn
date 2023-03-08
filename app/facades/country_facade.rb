@@ -1,7 +1,9 @@
 class CountryFacade
   def self.random_country_name
-    countries = CountryService.countries.map do |country|
-      country[:name][:common]
+    countries = Rails.cache.fetch('countries', expires_in: 1.week) do
+      CountryService.countries.map do |country|
+        country[:name][:common]
+      end
     end
     countries.shuffle.sample
   end
