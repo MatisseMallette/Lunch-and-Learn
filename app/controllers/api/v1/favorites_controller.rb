@@ -7,6 +7,14 @@ class Api::V1::FavoritesController < ApplicationController
     render json: ErrorSerializer.serialize(e), status: :unprocessable_entity
   end
 
+  def index
+    user = User.find_by!(api_key: favorite_api_key_params[:api_key])
+    favorites = user.favorites
+    render json: FavoriteSerializer.new(favorites)
+  rescue StandardError => e
+    render json: ErrorSerializer.serialize(e), status: :unprocessable_entity
+  end
+
   private
 
   def favorite_api_key_params

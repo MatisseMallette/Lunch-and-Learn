@@ -10,12 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_08_050640) do
-
-  create_table "api_v1_favorites", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2023_03_08_050335) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
