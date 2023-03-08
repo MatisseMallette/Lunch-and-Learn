@@ -42,8 +42,8 @@ RSpec.describe "Api::V1::Users", type: :request do
       parsed_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(response.status).to eq(422)
-
-      created_user = User.last
     end
+
+    #TODO: Can't be created if user is duplicate, if given an incorrectly formatted email
   end
 end

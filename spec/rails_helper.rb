@@ -86,3 +86,15 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.filter_sensitive_data('EDAMAM_APP_ID') { ENV['EDAMAM_APP_ID'] }
+  config.filter_sensitive_data('EDAMAM_APP_KEY') { ENV['EDAMAM_APP_KEY'] }
+  config.filter_sensitive_data('GOOGLE_API_KEY') { ENV['GOOGLE_API_KEY'] }
+  config.filter_sensitive_data('GEOAPIFY_KEY') { ENV['GEOAPIFY_KEY'] }
+  config.filter_sensitive_data('UNSPLASH_APP_KEY') { ENV['UNSPLASH_APP_KEY'] }
+  config.filter_sensitive_data('OPENWEATHERMAP_API_KEY') { ENV['OPENWEATHERMAP_API_KEY'] }
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+end

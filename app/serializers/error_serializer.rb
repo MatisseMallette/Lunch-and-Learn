@@ -1,9 +1,18 @@
 class ErrorSerializer
   def self.serialize(error)
     {
-      message: error.full_messages,
-      status: find_status[error.class].to_s
+      "message": 'There was an error processing your request',
+      "errors": find_message(error),
+      "status": find_status[error.class].to_s
     }
+  end
+
+  def self.find_message(error)
+    if error.instance_of?(ActiveModel::Errors) 
+      error.full_messages
+    else
+      [error.message]
+    end
   end
 
   def self.find_status
