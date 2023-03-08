@@ -23,7 +23,7 @@ RSpec.describe 'Recipes Requests', type: :request do
       end
 
       it 'uses a random country if none is given', vcr: { record: :new_episodes } do
-        get api_v1_recipes_path
+        get api_v1_recipes_path('')
 
         expect(response).to be_successful
 

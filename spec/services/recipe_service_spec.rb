@@ -1,28 +1,26 @@
 require 'rails_helper'
 
-RSpec.describe 'Country Service' do
-  describe 'successful response', :vcr do
-    it 'it returns data about a country' do
-      data = CountryService.country('Mexico').first
+RSpec.describe 'Recipe Service' do
+  describe 'successful response', vcr: { record: :new_episodes }  do
+    it 'it returns data about a recipe' do
+      response = RecipeService.find_by_country('Mexico')
+      
+      expect(response).to be_an(Hash)
+      expect(response).to have_key(:hits)
+      expect(response[:hits]).to be_an(Array)
+      expect(response[:hits].present?).to eq(true)
 
-      expect(data).to be_a(Hash)
+      response[:hits].each do |recipes|
+        expect(recipes).to be_an(Hash)
+        expect(recipes).to have_key(:recipe)
 
-      expect(data[:name]).to be_a(Hash)
-      expect(data[:name]).to have_key(:common)
-      expect(data[:name][:common]).to be_a(String)
-
-      expect(data).to have_key(:capital)
-      expect(data[:capital]).to be_a(Array)
-      expect(data[:capital].count).to eq(1)
-      expect(data[:capital][0]).to be_a(String)
-
-      expect(data).to have_key(:capitalInfo)
-      expect(data[:capitalInfo]).to be_a(Hash)
-      expect(data[:capitalInfo]).to have_key(:latlng)
-      expect(data[:capitalInfo][:latlng]).to be_a(Array)
-      expect(data[:capitalInfo][:latlng].count).to eq(2)
-      expect(data[:capitalInfo][:latlng].first).to be_a(Float)
-      expect(data[:capitalInfo][:latlng].last).to be_a(Float)
+        expect(recipes[:recipe]).to have_key(:label)
+        expect(recipes[:recipe][:label]).to be_a(String)
+        expect(recipes[:recipe]).to have_key(:image)
+        expect(recipes[:recipe][:image]).to be_a(String)
+        expect(recipes[:recipe]).to have_key(:url)
+        expect(recipes[:recipe][:url]).to be_a(String)
+      end
     end
   end
 end
