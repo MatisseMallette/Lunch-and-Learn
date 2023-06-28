@@ -1,5 +1,3 @@
-# README
-
 # Lunch and Learn Backend Service
 
 The goal of this project is to create a variety of endpoints for an imagined frontend application will allow a user to search for cuisines by country, while providing opportunities to learn more about that country's culture. This app would allow users to search for recipes by country, add favorite recipes to their account, and provide images and video materials to learn more about that particular country.
